@@ -183,10 +183,12 @@
 
     <!-- Hero Section -->
     <section class="relative bg-slate-900 text-white py-16 lg:py-24 overflow-hidden">
+        <!-- Background Image -->
         <div class="absolute inset-0 opacity-20">
             <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1920&q=80"
                 alt="Home Service Technician" class="w-full h-full object-cover">
         </div>
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
             <div>
                 <span
@@ -202,17 +204,35 @@
                     From emergency plumbing leaks to complete HVAC tune-ups, our certified technicians deliver
                     high-quality repair services with transparent pricing and zero hidden fees.
                 </p>
+
+                <!-- Gorgeous Animated Action Buttons -->
                 <div class="flex flex-col sm:flex-row gap-4 mb-10">
+                    <!-- Book Service Now (Glow & Shimmer Effect) -->
                     <a href="#estimate"
-                        class="bg-brand-600 hover:bg-brand-500 text-white text-center font-bold px-8 py-4 rounded-xl shadow-lg shadow-brand-600/40 transition-all text-lg">
-                        Book Service Now
+                        class="relative group overflow-hidden bg-brand-600 hover:bg-brand-500 text-white text-center font-bold px-8 py-4 rounded-xl shadow-lg shadow-brand-600/40 hover:shadow-brand-500/60 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 text-lg flex items-center justify-center gap-2">
+                        <!-- Subtle Animated Shimmer Overlay -->
+                        <span
+                            class="absolute top-0 left-0 w-full h-full bg-white/20 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></span>
+                        <span>Book Service Now</span>
+                        <i
+                            class="fa-solid fa-arrow-right text-sm group-hover:translate-x-1 transition-transform duration-300"></i>
                     </a>
+
+                    <!-- Call Dispatch (Live Pulse Ring & Icon Animation) -->
                     <a href="tel:+18005550199"
-                        class="bg-slate-800 hover:bg-slate-700 text-white text-center font-bold px-8 py-4 rounded-xl border border-slate-700 transition-all text-lg flex items-center justify-center gap-3">
-                        <i class="fa-solid fa-headset text-accent-500"></i>
+                        class="relative group bg-slate-800 hover:bg-slate-700 text-white text-center font-bold px-8 py-4 rounded-xl border border-slate-700 hover:border-slate-600 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 text-lg flex items-center justify-center gap-3">
+                        <!-- Pulsing Indicator Ring for Live Hotline Status -->
+                        <span class="relative flex h-3 w-3">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                        </span>
+                        <i
+                            class="fa-solid fa-headset text-accent-500 group-hover:rotate-12 group-hover:scale-110 transition-transform duration-300"></i>
                         <span>Call Dispatch</span>
                     </a>
                 </div>
+
                 <div class="flex items-center gap-6 text-sm text-slate-400">
                     <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400"></i>
                         Licensed & Insured</div>
@@ -251,7 +271,7 @@
                         </select>
                     </div>
                     <button type="submit"
-                        class="w-full bg-accent-500 hover:bg-accent-600 text-slate-900 font-extrabold py-4 rounded-lg shadow-lg shadow-accent-500/25 transition-all text-lg">
+                        class="w-full bg-accent-500 hover:bg-accent-600 text-slate-900 font-extrabold py-4 rounded-lg shadow-lg shadow-accent-500/25 transition-all text-lg hover:-translate-y-0.5 active:translate-y-0">
                         Get Immediate Service
                     </button>
                 </form>
@@ -297,43 +317,92 @@
 
 
     <!-- About Us Section -->
-    <section id="about" class="py-20 bg-white overflow-hidden">
+    <section id="about" class="py-20 bg-white overflow-hidden scroll-mt-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-                <!-- Left Side: Visual / Content Badges -->
-                <div class="relative">
+                <!-- Left Side: Animated Premium Dark Card -->
+                <div class="relative group">
+                    <!-- Ambient Pulsing Glow behind the card -->
                     <div
-                        class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 bg-slate-900 text-white p-8 sm:p-12">
+                        class="absolute -inset-1 bg-gradient-to-r from-brand-600 to-sky-500 rounded-3xl blur-xl opacity-30 group-hover:opacity-60 transition duration-1000 group-hover:duration-300 animate-pulse">
+                    </div>
+
+                    <div
+                        class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-800 bg-slate-900 text-white p-8 sm:p-12 transform transition-transform duration-500 hover:-translate-y-1">
+
+                        <!-- Animated Floating Glow Spheres inside -->
                         <div
-                            class="absolute -right-10 -bottom-10 w-60 h-60 bg-brand-600/20 rounded-full blur-3xl pointer-events-none">
+                            class="absolute -right-10 -bottom-10 w-60 h-60 bg-brand-600/30 rounded-full blur-3xl pointer-events-none animate-bounce duration-[4000ms]">
+                        </div>
+                        <div
+                            class="absolute -left-10 -top-10 w-48 h-48 bg-sky-500/20 rounded-full blur-2xl pointer-events-none">
                         </div>
 
+                        <!-- Subtle Diagonal Light Shimmer Line -->
+                        <span
+                            class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none"></span>
+
                         <div
-                            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/20 text-brand-400 text-xs font-bold uppercase tracking-wider mb-6">
-                            <i class="fa-solid fa-award"></i> Established Excellence
+                            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-500/20 border border-brand-500/30 text-sky-300 text-xs font-bold uppercase tracking-wider mb-6 backdrop-blur-md">
+                            <i class="fa-solid fa-award text-sm"></i> Established Excellence
                         </div>
 
-                        <h3 class="text-2xl sm:text-3xl font-extrabold mb-4 leading-snug">
+                        <h3 class="text-2xl sm:text-3xl font-extrabold mb-4 leading-snug text-white">
                             Dedicated to Keeping Your Home Safe & Running Smoothly.
                         </h3>
 
-                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-8">
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-8 relative z-10">
                             For over a decade, ApexHome has been the trusted name for emergency repairs, plumbing, and
                             home system solutions. Our certified professionals bring expert craftsmanship and
                             transparent pricing to every doorstep.
                         </p>
 
-                        <!-- Mini Stats Grid -->
-                        <div class="grid grid-cols-2 gap-6 pt-6 border-t border-slate-800">
-                            <div>
-                                <div class="text-3xl sm:text-4xl font-black text-brand-400 mb-1">15k+</div>
-                                <div class="text-xs sm:text-sm text-slate-400 font-medium">Completed Projects</div>
+                        <!-- Mini Stats Grid with Continuous Pulse Animations -->
+                        <div id="stats-box" class="grid grid-cols-2 gap-6 pt-6 border-t border-slate-800 relative z-10">
+
+                            <!-- Completed Projects Card -->
+                            <div
+                                class="group relative p-4 rounded-xl bg-slate-800/80 border border-slate-700/80 backdrop-blur-sm transition-all duration-300 hover:border-sky-400/60 hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-500/10 overflow-hidden">
+                                <!-- Always Active Pulsing Ambient Background Glow -->
+                                <div
+                                    class="absolute -right-4 -bottom-4 w-24 h-24 bg-sky-500/20 rounded-full blur-xl animate-pulse">
+                                </div>
+                                <div
+                                    class="absolute -left-4 -top-4 w-20 h-20 bg-brand-500/15 rounded-full blur-lg animate-pulse duration-1000">
+                                </div>
+
+                                <div
+                                    class="text-3xl sm:text-4xl font-black text-sky-400 mb-1 flex items-center gap-1.5 relative z-10">
+                                    <i class="fa-solid fa-circle-check text-base text-sky-400 animate-bounce"></i>
+                                    <span class="num-counter" data-target="15">0</span><span>k+</span>
+                                </div>
+                                <div
+                                    class="text-xs sm:text-sm text-slate-300 font-medium relative z-10 group-hover:text-white transition-colors">
+                                    Completed Projects</div>
                             </div>
-                            <div>
-                                <div class="text-3xl sm:text-4xl font-black text-brand-400 mb-1">99%</div>
-                                <div class="text-xs sm:text-sm text-slate-400 font-medium">Customer Satisfaction</div>
+
+                            <!-- Customer Satisfaction Card -->
+                            <div
+                                class="group relative p-4 rounded-xl bg-slate-800/80 border border-slate-700/80 backdrop-blur-sm transition-all duration-300 hover:border-sky-400/60 hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-500/10 overflow-hidden">
+                                <!-- Always Active Pulsing Ambient Background Glow -->
+                                <div
+                                    class="absolute -right-4 -bottom-4 w-24 h-24 bg-sky-500/20 rounded-full blur-xl animate-pulse">
+                                </div>
+                                <div
+                                    class="absolute -left-4 -top-4 w-20 h-20 bg-brand-500/15 rounded-full blur-lg animate-pulse duration-1000">
+                                </div>
+
+                                <div
+                                    class="text-3xl sm:text-4xl font-black text-sky-400 mb-1 flex items-center gap-1.5 relative z-10">
+                                    <i class="fa-solid fa-face-smile text-base text-sky-400 animate-bounce"></i>
+                                    <span class="num-counter" data-target="99">0</span><span>%</span>
+                                </div>
+                                <div
+                                    class="text-xs sm:text-sm text-slate-300 font-medium relative z-10 group-hover:text-white transition-colors">
+                                    Customer Satisfaction</div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -394,12 +463,17 @@
                         </div>
                     </div>
 
-                    <!-- Call To Action -->
+                    <!-- Call To Action (Always Animated Phone Icon) -->
                     <div class="flex items-center gap-4">
                         <a href="tel:+18005550199"
-                            class="inline-flex items-center gap-3 bg-brand-600 hover:bg-brand-500 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg shadow-brand-600/30 transition-all">
-                            <i class="fa-solid fa-phone-volume"></i>
-                            <span>Call (800) 555-0199</span>
+                            class="relative group overflow-hidden inline-flex items-center gap-3 bg-brand-600 hover:bg-brand-500 text-white font-bold px-7 py-4 rounded-xl shadow-lg shadow-brand-600/30 hover:shadow-brand-500/50 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300">
+                            <!-- Shimmer Light Wave -->
+                            <span
+                                class="absolute top-0 left-0 w-full h-full bg-white/20 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none"></span>
+
+                            <!-- Always Animated Phone Icon -->
+                            <i class="fa-solid fa-phone-volume text-lg animate-bounce"></i>
+                            <span class="text-base">Call (800) 555-0199</span>
                         </a>
                     </div>
 
@@ -413,55 +487,116 @@
     <section id="services" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Our Professional Services</h2>
-                <p class="text-slate-600">We provide a wide array of emergency and standard residential repair services
-                    with certified specialists.</p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">Our Professional
+                    Services</h2>
+                <p class="text-slate-600 text-base">We provide a wide array of emergency and standard residential repair
+                    services with certified specialists.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Service 1 -->
+                <!-- Service 1: HVAC -->
                 <div
-                    class="bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:shadow-xl transition-all duration-300 group">
+                    class="relative bg-slate-50 rounded-2xl p-8 border border-slate-200/80 hover:border-brand-500/40 hover:bg-white hover:shadow-2xl hover:shadow-brand-500/10 hover:-translate-y-2 transition-all duration-500 group overflow-hidden">
+                    <!-- Moving Ambient Light Glows -->
                     <div
-                        class="w-14 h-14 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-temperature-arrow-down"></i>
+                        class="absolute -right-6 -bottom-6 w-36 h-36 bg-brand-500/20 rounded-full blur-2xl animate-glow-move-1 pointer-events-none">
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">HVAC & Heat Pump</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Complete heating, AC tune-ups, and heat pump
-                        installation to keep your home comfortable year-round.</p>
+                    <div
+                        class="absolute -left-6 -top-6 w-28 h-28 bg-sky-400/20 rounded-full blur-xl animate-glow-move-2 pointer-events-none">
+                    </div>
+
+                    <!-- Top Accent Line on Hover -->
+                    <div
+                        class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-500 to-sky-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left">
+                    </div>
+
+                    <div
+                        class="w-16 h-16 bg-brand-50 text-brand-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-brand-600 group-hover:text-white group-hover:scale-110 group-hover:rotate-3 shadow-md transition-all duration-300 relative z-10">
+                        <i class="fa-solid fa-temperature-arrow-down group-hover:animate-bounce"></i>
+                    </div>
+
+                    <h3
+                        class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition-colors relative z-10">
+                        HVAC & Heat Pump</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6 relative z-10">Complete heating, AC tune-ups,
+                        and heat pump installation to keep your home comfortable year-round.</p>
+
                     <a href="#estimate"
-                        class="text-brand-600 font-bold flex items-center gap-2 group-hover:gap-3 transition-all">Request
-                        Service <i class="fa-solid fa-arrow-right"></i></a>
+                        class="inline-flex items-center gap-2 text-brand-600 font-bold text-sm group-hover:text-brand-700 transition-all relative z-10">
+                        <span>Request Service</span>
+                        <i
+                            class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-transform duration-300"></i>
+                    </a>
                 </div>
 
-                <!-- Service 2 -->
+                <!-- Service 2: Emergency Plumbing -->
                 <div
-                    class="bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:shadow-xl transition-all duration-300 group">
+                    class="relative bg-slate-50 rounded-2xl p-8 border border-slate-200/80 hover:border-brand-500/40 hover:bg-white hover:shadow-2xl hover:shadow-brand-500/10 hover:-translate-y-2 transition-all duration-500 group overflow-hidden">
+                    <!-- Moving Ambient Light Glows -->
                     <div
-                        class="w-14 h-14 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-pipe-valve"></i>
+                        class="absolute -right-6 -bottom-6 w-36 h-36 bg-sky-500/20 rounded-full blur-2xl animate-glow-move-1 pointer-events-none">
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Emergency Plumbing</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Burst pipes, drain cleaning, water heater
-                        repair, and leak detection available 24 hours a day.</p>
+                    <div
+                        class="absolute -left-6 -top-6 w-28 h-28 bg-brand-400/20 rounded-full blur-xl animate-glow-move-2 pointer-events-none">
+                    </div>
+
+                    <!-- Top Accent Line on Hover -->
+                    <div
+                        class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-500 to-sky-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left">
+                    </div>
+
+                    <div
+                        class="w-16 h-16 bg-brand-50 text-brand-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-brand-600 group-hover:text-white group-hover:scale-110 group-hover:-rotate-3 shadow-md transition-all duration-300 relative z-10">
+                        <i class="fa-solid fa-faucet-drip group-hover:animate-bounce"></i>
+                    </div>
+
+                    <h3
+                        class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition-colors relative z-10">
+                        Emergency Plumbing</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6 relative z-10">Burst pipes, drain cleaning,
+                        water heater repair, and leak detection available 24 hours a day.</p>
+
                     <a href="#estimate"
-                        class="text-brand-600 font-bold flex items-center gap-2 group-hover:gap-3 transition-all">Request
-                        Service <i class="fa-solid fa-arrow-right"></i></a>
+                        class="inline-flex items-center gap-2 text-brand-600 font-bold text-sm group-hover:text-brand-700 transition-all relative z-10">
+                        <span>Request Service</span>
+                        <i
+                            class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-transform duration-300"></i>
+                    </a>
                 </div>
 
-                <!-- Service 3 -->
+                <!-- Service 3: Electrical Solutions -->
                 <div
-                    class="bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:shadow-xl transition-all duration-300 group">
+                    class="relative bg-slate-50 rounded-2xl p-8 border border-slate-200/80 hover:border-brand-500/40 hover:bg-white hover:shadow-2xl hover:shadow-brand-500/10 hover:-translate-y-2 transition-all duration-500 group overflow-hidden">
+                    <!-- Moving Ambient Light Glows -->
                     <div
-                        class="w-14 h-14 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-bolt"></i>
+                        class="absolute -right-6 -bottom-6 w-36 h-36 bg-amber-500/20 rounded-full blur-2xl animate-glow-move-1 pointer-events-none">
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Electrical Solutions</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Panel upgrades, wiring repairs, light
-                        installation, and emergency power outage troubleshooting.</p>
+                    <div
+                        class="absolute -left-6 -top-6 w-28 h-28 bg-brand-500/20 rounded-full blur-xl animate-glow-move-2 pointer-events-none">
+                    </div>
+
+                    <!-- Top Accent Line on Hover -->
+                    <div
+                        class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-500 to-sky-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left">
+                    </div>
+
+                    <div
+                        class="w-16 h-16 bg-brand-50 text-brand-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-brand-600 group-hover:text-white group-hover:scale-110 group-hover:rotate-3 shadow-md transition-all duration-300 relative z-10">
+                        <i class="fa-solid fa-bolt group-hover:animate-bounce"></i>
+                    </div>
+
+                    <h3
+                        class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition-colors relative z-10">
+                        Electrical Solutions</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6 relative z-10">Panel upgrades, wiring repairs,
+                        light installation, and emergency power outage troubleshooting.</p>
+
                     <a href="#estimate"
-                        class="text-brand-600 font-bold flex items-center gap-2 group-hover:gap-3 transition-all">Request
-                        Service <i class="fa-solid fa-arrow-right"></i></a>
+                        class="inline-flex items-center gap-2 text-brand-600 font-bold text-sm group-hover:text-brand-700 transition-all relative z-10">
+                        <span>Request Service</span>
+                        <i
+                            class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-transform duration-300"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -522,10 +657,20 @@
                     </div>
                 </div>
 
-                <!-- Trust Showcase Image Card (Fixed Overflow) -->
-                <div class="relative mt-4 sm:mt-0">
-                    <div class="absolute -inset-2 sm:-inset-4 bg-brand-500/10 rounded-3xl transform sm:-rotate-2"></div>
-                    <div class="relative bg-white rounded-2xl p-4 shadow-xl border border-slate-200">
+                <!-- Trust Showcase Image Card with Soft, Fast-Moving Animated Background -->
+                <div class="relative mt-4 sm:mt-0 group">
+                    <!-- Outer Soft Glowing Aura (Fast Multi-color) -->
+                    <div
+                        class="absolute -inset-3 sm:-inset-5 bg-gradient-to-r from-brand-500/20 via-sky-400/20 to-amber-400/20 rounded-3xl blur-2xl opacity-70 animate-gradient-fast group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+
+                    <!-- Soft Pastel Animated Backdrop Frame -->
+                    <div
+                        class="absolute -inset-2 sm:-inset-4 bg-gradient-to-r from-brand-400/25 via-sky-400/25 via-purple-400/25 to-amber-400/25 rounded-3xl transform sm:-rotate-2 animate-gradient-fast backdrop-blur-sm border border-white/20">
+                    </div>
+
+                    <!-- Main Card Container -->
+                    <div class="relative bg-white rounded-2xl p-4 shadow-xl border border-slate-200/80">
                         <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80"
                             alt="Professional Technician" class="rounded-xl w-full h-80 object-cover mb-4">
                         <div class="flex items-center justify-between p-2">
@@ -553,12 +698,13 @@
     <section id="reviews" class="py-20 bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12">
-                <div class="flex justify-center gap-1 text-accent-500 mb-2 text-lg">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                <!-- Header Wave Stars -->
+                <div class="flex justify-center gap-1.5 text-amber-500 mb-2 text-xl">
+                    <i class="fa-solid fa-star star-wave-1"></i>
+                    <i class="fa-solid fa-star star-wave-2"></i>
+                    <i class="fa-solid fa-star star-wave-3"></i>
+                    <i class="fa-solid fa-star star-wave-4"></i>
+                    <i class="fa-solid fa-star star-wave-5"></i>
                 </div>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">What Our Local Clients Say</h2>
                 <p class="text-slate-600">Real feedback from verified homeowners across Seattle, Bellevue, Tacoma, and
@@ -568,28 +714,41 @@
             <!-- Swiper Slider Container -->
             <div class="swiper reviewSwiper !pb-14">
                 <div class="swiper-wrapper">
+
                     <!-- Review Card 1 -->
                     <div class="swiper-slide h-auto">
                         <div
-                            class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-md hover:shadow-lg transition-all h-full flex flex-col justify-between">
+                            class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col justify-between group">
                             <div>
-                                <div class="flex text-accent-500 text-sm mb-4">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                        class="fa-solid fa-star"></i>
+                                <!-- Card Wave Stars -->
+                                <div class="flex text-amber-500 text-sm mb-4 gap-1">
+                                    <i class="fa-solid fa-star star-wave-1"></i>
+                                    <i class="fa-solid fa-star star-wave-2"></i>
+                                    <i class="fa-solid fa-star star-wave-3"></i>
+                                    <i class="fa-solid fa-star star-wave-4"></i>
+                                    <i class="fa-solid fa-star star-wave-5"></i>
                                 </div>
                                 <p class="text-slate-700 text-base leading-relaxed mb-6 italic">
                                     "Our heating stopped working in the middle of a freezing night. Apex responded
                                     within 45 minutes and fixed our heat pump right away. Exceptional service!"
                                 </p>
                             </div>
-                            <div class="flex items-center gap-3 border-t border-slate-200/60 pt-4">
+                            <div class="flex items-center gap-4 border-t border-slate-200/60 pt-4">
+                                <!-- Animated Border Avatar Container -->
                                 <div
-                                    class="w-12 h-12 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold text-base shadow-md">
-                                    JD
+                                    class="relative w-13 h-13 p-[2px] rounded-full overflow-hidden flex items-center justify-center">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-r from-brand-500 via-sky-400 to-amber-400 animate-avatar-border rounded-full">
+                                    </div>
+                                    <div
+                                        class="relative w-12 h-12 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold text-base shadow-inner z-10">
+                                        JD
+                                    </div>
                                 </div>
                                 <div>
-                                    <h4 class="text-base font-bold text-slate-900">John D.</h4>
+                                    <h4
+                                        class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition-colors">
+                                        John D.</h4>
                                     <p class="text-xs text-slate-500">Seattle, WA — Emergency HVAC</p>
                                 </div>
                             </div>
@@ -599,25 +758,36 @@
                     <!-- Review Card 2 -->
                     <div class="swiper-slide h-auto">
                         <div
-                            class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-md hover:shadow-lg transition-all h-full flex flex-col justify-between">
+                            class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col justify-between group">
                             <div>
-                                <div class="flex text-accent-500 text-sm mb-4">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                        class="fa-solid fa-star"></i>
+                                <div class="flex text-amber-500 text-sm mb-4 gap-1">
+                                    <i class="fa-solid fa-star star-wave-1"></i>
+                                    <i class="fa-solid fa-star star-wave-2"></i>
+                                    <i class="fa-solid fa-star star-wave-3"></i>
+                                    <i class="fa-solid fa-star star-wave-4"></i>
+                                    <i class="fa-solid fa-star star-wave-5"></i>
                                 </div>
                                 <p class="text-slate-700 text-base leading-relaxed mb-6 italic">
                                     "Upfront pricing with no surprises. The plumber explained everything clearly before
                                     starting. I will definitely use them again for home maintenance."
                                 </p>
                             </div>
-                            <div class="flex items-center gap-3 border-t border-slate-200/60 pt-4">
+                            <div class="flex items-center gap-4 border-t border-slate-200/60 pt-4">
+                                <!-- Animated Border Avatar Container -->
                                 <div
-                                    class="w-12 h-12 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold text-base shadow-md">
-                                    MS
+                                    class="relative w-13 h-13 p-[2px] rounded-full overflow-hidden flex items-center justify-center">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-r from-brand-500 via-sky-400 to-amber-400 animate-avatar-border rounded-full">
+                                    </div>
+                                    <div
+                                        class="relative w-12 h-12 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold text-base shadow-inner z-10">
+                                        MS
+                                    </div>
                                 </div>
                                 <div>
-                                    <h4 class="text-base font-bold text-slate-900">Michael S.</h4>
+                                    <h4
+                                        class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition-colors">
+                                        Michael S.</h4>
                                     <p class="text-xs text-slate-500">Bellevue, WA — Leak Repair</p>
                                 </div>
                             </div>
@@ -627,25 +797,36 @@
                     <!-- Review Card 3 -->
                     <div class="swiper-slide h-auto">
                         <div
-                            class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-md hover:shadow-lg transition-all h-full flex flex-col justify-between">
+                            class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col justify-between group">
                             <div>
-                                <div class="flex text-accent-500 text-sm mb-4">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                        class="fa-solid fa-star"></i>
+                                <div class="flex text-amber-500 text-sm mb-4 gap-1">
+                                    <i class="fa-solid fa-star star-wave-1"></i>
+                                    <i class="fa-solid fa-star star-wave-2"></i>
+                                    <i class="fa-solid fa-star star-wave-3"></i>
+                                    <i class="fa-solid fa-star star-wave-4"></i>
+                                    <i class="fa-solid fa-star star-wave-5"></i>
                                 </div>
                                 <p class="text-slate-700 text-base leading-relaxed mb-6 italic">
                                     "Extremely professional electrician! Panel upgrade was completed ahead of schedule
                                     and passed inspection effortlessly. Highly recommended!"
                                 </p>
                             </div>
-                            <div class="flex items-center gap-3 border-t border-slate-200/60 pt-4">
+                            <div class="flex items-center gap-4 border-t border-slate-200/60 pt-4">
+                                <!-- Animated Border Avatar Container -->
                                 <div
-                                    class="w-12 h-12 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold text-base shadow-md">
-                                    SR
+                                    class="relative w-13 h-13 p-[2px] rounded-full overflow-hidden flex items-center justify-center">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-r from-brand-500 via-sky-400 to-amber-400 animate-avatar-border rounded-full">
+                                    </div>
+                                    <div
+                                        class="relative w-12 h-12 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold text-base shadow-inner z-10">
+                                        SR
+                                    </div>
                                 </div>
                                 <div>
-                                    <h4 class="text-base font-bold text-slate-900">Sarah R.</h4>
+                                    <h4
+                                        class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition-colors">
+                                        Sarah R.</h4>
                                     <p class="text-xs text-slate-500">Tacoma, WA — Panel Upgrade</p>
                                 </div>
                             </div>
@@ -655,30 +836,42 @@
                     <!-- Review Card 4 -->
                     <div class="swiper-slide h-auto">
                         <div
-                            class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-md hover:shadow-lg transition-all h-full flex flex-col justify-between">
+                            class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col justify-between group">
                             <div>
-                                <div class="flex text-accent-500 text-sm mb-4">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                        class="fa-solid fa-star"></i>
+                                <div class="flex text-amber-500 text-sm mb-4 gap-1">
+                                    <i class="fa-solid fa-star star-wave-1"></i>
+                                    <i class="fa-solid fa-star star-wave-2"></i>
+                                    <i class="fa-solid fa-star star-wave-3"></i>
+                                    <i class="fa-solid fa-star star-wave-4"></i>
+                                    <i class="fa-solid fa-star star-wave-5"></i>
                                 </div>
                                 <p class="text-slate-700 text-base leading-relaxed mb-6 italic">
                                     "Called them on Sunday for an urgent roof leak. The team arrived equipped and
                                     secured everything fast. Truly saved my wooden floors!"
                                 </p>
                             </div>
-                            <div class="flex items-center gap-3 border-t border-slate-200/60 pt-4">
+                            <div class="flex items-center gap-4 border-t border-slate-200/60 pt-4">
+                                <!-- Animated Border Avatar Container -->
                                 <div
-                                    class="w-12 h-12 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold text-base shadow-md">
-                                    DK
+                                    class="relative w-13 h-13 p-[2px] rounded-full overflow-hidden flex items-center justify-center">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-r from-brand-500 via-sky-400 to-amber-400 animate-avatar-border rounded-full">
+                                    </div>
+                                    <div
+                                        class="relative w-12 h-12 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold text-base shadow-inner z-10">
+                                        DK
+                                    </div>
                                 </div>
                                 <div>
-                                    <h4 class="text-base font-bold text-slate-900">David K.</h4>
+                                    <h4
+                                        class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition-colors">
+                                        David K.</h4>
                                     <p class="text-xs text-slate-500">Spokane, WA — Emergency Roof Repair</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
                 <!-- Pagination Dots & Navigation -->

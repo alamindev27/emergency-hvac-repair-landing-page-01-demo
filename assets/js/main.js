@@ -164,4 +164,52 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
+    window.addEventListener('DOMContentLoaded', function () {
+        var hasRun = false;
+
+        function startCounting() {
+            var counters = document.querySelectorAll('.num-counter');
+            counters.forEach(function (counter) {
+                var target = parseInt(counter.getAttribute('data-target'), 10) || 0;
+                var current = 0;
+                var duration = 1500;
+                var stepTime = Math.max(Math.floor(duration / target), 20);
+
+                var timer = setInterval(function () {
+                    current += 1;
+                    counter.textContent = current;
+                    if (current >= target) {
+                        counter.textContent = target;
+                        clearInterval(timer);
+                    }
+                }, stepTime);
+            });
+        }
+
+        function checkScroll() {
+            if (hasRun) return;
+            var statsBox = document.getElementById('stats-box');
+            if (!statsBox) return;
+
+            var rect = statsBox.getBoundingClientRect();
+            if (rect.top <= window.innerHeight * 0.85) {
+                hasRun = true;
+                startCounting();
+                window.removeEventListener('scroll', checkScroll);
+            }
+        }
+
+        window.addEventListener('scroll', checkScroll);
+        checkScroll();
+    });
+
+
+
+
+
+
+
+
+
 });
