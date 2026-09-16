@@ -10,6 +10,10 @@ html {
     scroll-behavior: smooth;
 }
 
+section[id] {
+    scroll-margin-top: 80px;
+}
+
 /* Custom Hamburger Animation Utilities */
 #menu-btn.open #line1 {
     transform: rotate(45deg) translate(2px, -2px);
@@ -38,4 +42,109 @@ html {
     width: 24px !important;
     border-radius: 9999px !important;
     transition: all 0.3s ease;
+}
+
+
+@keyframes floatGlow {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+    }
+
+    33% {
+        transform: translate(30px, -25px) scale(1.2);
+    }
+
+    66% {
+        transform: translate(-20px, 20px) scale(0.9);
+    }
+
+    100% {
+        transform: translate(0px, 0px) scale(1);
+    }
+}
+
+.animate-glow-move-1 {
+    animation: floatGlow 6s ease-in-out infinite;
+}
+
+.animate-glow-move-2 {
+    animation: floatGlow 8s ease-in-out infinite reverse;
+}
+
+
+/* Star Wave Animation */
+@keyframes starWave {
+
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+        color: #f59e0b;
+        /* Accent Color */
+    }
+
+    50% {
+        transform: translateY(-5px) scale(1.25);
+        color: #fbbf24;
+        /* Brighter Gold */
+    }
+}
+
+.star-wave-1 {
+    animation: starWave 1.8s ease-in-out infinite;
+    animation-delay: 0.0s;
+}
+
+.star-wave-2 {
+    animation: starWave 1.8s ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+
+.star-wave-3 {
+    animation: starWave 1.8s ease-in-out infinite;
+    animation-delay: 0.4s;
+}
+
+.star-wave-4 {
+    animation: starWave 1.8s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+
+.star-wave-5 {
+    animation: starWave 1.8s ease-in-out infinite;
+    animation-delay: 0.8s;
+}
+
+/* Rotating Gradient Avatar Border */
+@keyframes spinBorder {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-avatar-border {
+    animation: spinBorder 4s linear infinite;
+}
+
+
+/* Animated Gradient Background for Image Card */
+/* Fast & Smooth Animated Soft Gradient */
+@keyframes gradientRotateFast {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animate-gradient-fast {
+    background-size: 200% 200%;
+    animation: gradientRotateFast 2.5s ease infinite; /* Fast speed: 2.5s */
 }
